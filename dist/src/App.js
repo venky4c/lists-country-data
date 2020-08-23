@@ -1,16 +1,14 @@
-import React from 'react'
-import countryData from './countryData'
-import Header from './components/Header'
-import FindCountries from './components/FindCountries'
-import CountryList from './components/CountryList'
+import React from "react";
+import countryData from "./countryData";
+import FindCountries from "./components/FindCountries";
+import CountryList from "./components/CountryList";
 
 function App() {
-    const countryComponents = countryData.map(item => <CountryList country={item}/>)
-    return (
-        <div class='container'>                              
-                <FindCountries />                
-        </div>
-    )
+  return (
+    <div className="container">
+      <FindCountries />
+    </div>
+  );
 }
 
-export default App
+export default App;
